@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #ECFAE5; /* Светло-серый фон */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px; /* Немного уменьшил для турнирной таблицы */
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Темно-синий */
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2em; /* Немного уменьшил, если много колонок */
+}
+
+/* Обертка для таблицы для горизонтального скролла */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px; /* Минимальная ширина для турнирной таблицы */
+}
+
+/* Стили заголовков таблицы */
+thead th {
+    background-color: #3498db; /* Приятный синий цвет */
+    color: #ffffff;
+    padding: 12px 15px; /* Немного уменьшил паддинги */
+    text-align: center; /* Центрируем заголовки */
+    font-weight: 500;
+    /* text-transform: uppercase; */ /* Можно убрать для сокращений */
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #2980b9;
+    font-size: 0.9em; /* Немного уменьшил шрифт заголовков */
+}
+
+thead th:first-child {
+    border-top-left-radius: 6px;
+    text-align: left; /* Место обычно слева */
+}
+thead th:last-child {
+    border-top-right-radius: 6px;
+}
+thead th:nth-child(2) { /* Колонка с названием команды */
+    text-align: left;
+}
+
+
+/* Стили ячеек таблицы */
+tbody td {
+    padding: 10px 15px; /* Немного уменьшил паддинги */
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+    font-size: 0.9em;
+    text-align: center; /* Центрируем данные */
+}
+
+tbody td:first-child { /* Место */
+    font-weight: 500;
+    color: #2c3e50;
+    text-align: left;
+}
+
+tbody td.team-name { /* Название команды */
+    text-align: left;
+    font-weight: 500;
+}
+
+tbody td.points { /* Очки */
+    font-weight: 700;
+    color: #3498db;
+}
+
+
+/* Зебра-эффект для строк */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Эффект при наведении на строку */
+tbody tr:hover {
+    background-color: #eaf5ff;
+}
+
+/* Легенда */
+.legend {
+    margin-top: 20px;
+    font-size: 0.85em;
+    color: #777;
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+.legend p {
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6em;
+    }
+    table {
+        min-width: 600px; /* Уменьшаем min-width для скролла на планшетах */
+    }
+    thead th, tbody td {
+        font-size: 0.85em;
+        padding: 8px 10px;
+    }
+}
+
+img{
+    width: 25px;
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    table {
+        min-width: 100%; /* Таблица занимает всю доступную ширину перед скроллом */
+    }
+    thead th, tbody td {
+        font-size: 0.8em; /* Еще немного уменьшаем шрифт */
+        padding: 8px 6px; /* Уменьшаем паддинги */
+    }
+    .legend {
+        font-size: 0.75em;
+    }
+}
