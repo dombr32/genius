@@ -77,6 +77,11 @@ tbody td {
     text-align: center; /* Центрируем данные */
 }
 
+a {
+    text-decoration: none;
+    color: #555;
+}
+
 tbody td:first-child { /* Место */
     font-weight: 500;
     color: #2c3e50;
