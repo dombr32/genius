@@ -5,9 +5,9 @@ body {
     padding: 20px;
     background-color: #ECFAE5; /* Светло-серый фон */
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: flex-start; */
     min-height: 100vh;
 }
 
@@ -19,6 +19,7 @@ body {
     width: 100%;
     max-width: 1000px; /* Немного уменьшил для турнирной таблицы */
     box-sizing: border-box;
+    margin: auto;
 }
 
 h1 {
@@ -127,6 +128,10 @@ img{
     width: 25px;
     vertical-align: bottom;
     margin-left: 10px;
+}
+
+.afisha-section{
+    text-align: center;
 }
 
 /* Адаптивность */
