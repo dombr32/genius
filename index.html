@@ -12,8 +12,15 @@
     <div class="container">
         <h1>Непризнанные гении</h1>
 
+        <div class="dropdown">
+            <select id="tableSelect" class="custom-select">
+                <option value="main">Основная таблица</option>
+                <option value="last5">За последние 5 игр</option>
+            </select>
+        </div>
+        
         <div class="table-wrapper">
-            <table>
+            <table id="mainTable">
                 <thead>
                     <tr>
                         <th>Место</th>
@@ -30,113 +37,283 @@
                     <tr style="background-color: rgba(255, 215, 0, 0.4)">
                         <td data-label="Место">1 <img src="images/travel.png"></td>
                         <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/katerina__gerasimovich/">Юрьевна</a></td>
-                        <td data-label="И">7</td>
-                        <td data-label="ПП">7</td>
+                        <td data-label="И">8</td>
+                        <td data-label="ПП">8</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">0</td>
                         <td data-label="П">0</td>
-                        <td data-label="О" class="points">21</td>
+                        <td data-label="О" class="points">24</td>
                     </tr>
-                    <tr style="background-color: rgba(205, 127, 50, 0.4)">
-                        <td data-label="Место">2 <img src="images/corgi.png"></td>
-                        <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/nadzeyvets">Андрэ</a></td>
-                        <td data-label="И">7</td>
-                        <td data-label="ПП">7</td>
-                        <td data-label="УМ">0</td>
-                        <td data-label="НП">0</td>
-                        <td data-label="П">0</td>
-                        <td data-label="О" class="points">21</td>
-                    </tr>
+
                     <tr style="background-color: rgba(192, 192, 192, 0.4)">
-                        <td data-label="Место">3 <img src="images/chelsea_lion.png"></td>
+                        <td data-label="Место">2 <img src="images/chelsea_lion.png"></td>
                         <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/dombr32">Рома</a></td>
-                        <td data-label="И">7</td>
-                        <td data-label="ПП">6</td>
+                        <td data-label="И">8</td>
+                        <td data-label="ПП">7</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">0</td>
                         <td data-label="П">1</td>
-                        <td data-label="О" class="points">18</td>
+                        <td data-label="О" class="points">21</td>
+                    </tr>
+
+                    <tr style="background-color: rgba(205, 127, 50, 0.4)">
+                        <td data-label="Место">3 <img src="images/corgi.png"></td>
+                        <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/nadzeyvets">Андрэ</a></td>
+                        <td data-label="И">8</td>
+                        <td data-label="ПП">7</td>
+                        <td data-label="УМ">0</td>
+                        <td data-label="НП">0</td>
+                        <td data-label="П">1</td>
+                        <td data-label="О" class="points">21</td>
                     </tr>
                     
                     <tr>
                         <td data-label="Место">4 <a href="https://www.instagram.com/chelseafc/"><img src="images/2025_FIFA_Club_World_Cup.svg.png"></a></td>
                         <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/gerasimovich.vladimir">Вовик</a></td>
-                        <td data-label="И">7</td>
-                        <td data-label="ПП">5</td>
+                        <td data-label="И">8</td>
+                        <td data-label="ПП">6</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">0</td>
                         <td data-label="П">2</td>
-                        <td data-label="О" class="points">15</td>
+                        <td data-label="О" class="points">18</td>
                     </tr>
                      <tr>
                         <td data-label="Место">5 <img src="images/arina.jpg"></td>
                         <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/k.ar.dmitrievna">Арина</a></td>
-                        <td data-label="И">7</td>
-                        <td data-label="ПП">4</td>
+                        <td data-label="И">8</td>
+                        <td data-label="ПП">5</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">0</td>
                         <td data-label="П">3</td>
-                        <td data-label="О" class="points">12</td>
+                        <td data-label="О" class="points">15</td>
                     </tr>
                     <tr>
                         <td data-label="Место">6 <img src="images/captain.jpg"></td>
                         <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/aleshkevich_violetta">Виолетта</a></td>
-                        <td data-label="И">7</td>
-                        <td data-label="ПП">3</td>
+                        <td data-label="И">8</td>
+                        <td data-label="ПП">4</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">1</td>
                         <td data-label="П">3</td>
-                        <td data-label="О" class="points">10</td>
+                        <td data-label="О" class="points">13</td>
                     </tr>
                     <tr>
                         <td data-label="Место">7 <a href="https://www.instagram.com/fcbarcelona/"><img src="images/gallic-rooster.png"></a></td>
                         <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/kochevnik_reise">Владик</a></td>
-                        <td data-label="И">7</td>
+                        <td data-label="И">8</td>
                         <td data-label="ПП">3</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">1</td>
-                        <td data-label="П">3</td>
+                        <td data-label="П">4</td>
                         <td data-label="О" class="points">10</td>
                     </tr>
                     <tr>
                         <td data-label="Место">8 <img src="images/pt.png"></td>
                         <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/kireev_aliaksandr">Санек</a></td>
-                        <td data-label="И">7</td>
+                        <td data-label="И">8</td>
                         <td data-label="ПП">2</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">1</td>
-                        <td data-label="П">4</td>
+                        <td data-label="П">5</td>
                         <td data-label="О" class="points">7</td>
                     </tr>
                     
                     <tr>
                         <td data-label="Место">9 <img src="images/pt.png"></td>
                         <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/anton_zakharov_96">Антонио</a></td>
-                        <td data-label="И">7</td>
+                        <td data-label="И">8</td>
                         <td data-label="ПП">2</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">0</td>
-                        <td data-label="П">5</td>
+                        <td data-label="П">6</td>
                         <td data-label="О" class="points">6</td>
                     </tr>
                     <tr>
                         <td data-label="Место">10<img src="images/pt.png"></td>
                         <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/valllerochkaaa">Валерия</a></td>
-                        <td data-label="И">7</td>
+                        <td data-label="И">8</td>
                         <td data-label="ПП">2</td>
                         <td data-label="УМ">0</td>
                         <td data-label="НП">0</td>
-                        <td data-label="П">5</td>
+                        <td data-label="П">6</td>
+                        <td data-label="О" class="points">6</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="last5Table" style="display: none;" class="last-game">
+                <thead>
+                    <tr>
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Ф</th> <!-- Форма -->
+                        <th>О</th> <!-- Очки -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: rgba(255, 215, 0, 0.4)">
+                        <td data-label="Место">1</td>
+                        <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/katerina__gerasimovich/">Юрьевна</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">15</td>
+                    </tr>
+
+                    <tr style="background-color: rgba(192, 192, 192, 0.4)">
+                        <td data-label="Место">2 <img src="images/triangle.png"></td>
+                        <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/dombr32">Рома</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-green"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">12</td>
+                    </tr>
+
+                    <tr style="background-color: rgba(205, 127, 50, 0.4)">
+                        <td data-label="Место">3 <img src="images/down.png"></td>
+                        <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/nadzeyvets">Андрэ</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">12</td>
+                    </tr>
+                    
+                    <tr>
+                        <td data-label="Место">4</a></td>
+                        <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/gerasimovich.vladimir">Вовик</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-red"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">12</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Место">5</td>
+                        <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/aleshkevich_violetta">Виолетта</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-green"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">12</td>
+                    </tr>
+
+                     <tr>
+                        <td data-label="Место">6</td>
+                        <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/k.ar.dmitrievna">Арина</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-green"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">9</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Место">7</td>
+                        <td data-label="Команда" class="team-name"><a href="https://www.instagram.com/kochevnik_reise">Владик</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-red"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">6</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Место">8</td>
+                        <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/kireev_aliaksandr">Санек</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-red"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">6</td>
+                    </tr>
+                    
+                    <tr>
+                        <td data-label="Место">9</td>
+                        <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/anton_zakharov_96">Антонио</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-red"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
+                        <td data-label="О" class="points">6</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Место">10</td>
+                        <td data-label="Игрок" class="team-name"><a href="https://www.instagram.com/valllerochkaaa">Валерия</a></td>
+                        <td data-label="Ф">
+                            <div class="form">
+                                <div class="circle-red"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-red"></div>
+                                <div class="circle-green"></div>
+                                <div class="circle-green"></div>
+                            </div>
+                        </td>
                         <td data-label="О" class="points">6</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <div class="legend">
+        <div class="legend" id="legend-all">
             <p><strong>И</strong> - Игры, <strong>ПП</strong> - Поставил плюс и пришел(3), <strong>УМ</strong> - Угадал место(2), <strong>НП</strong> - Не поставил плюс и пришел(1), <strong>П</strong> - Пропуск игры(0), <strong>О</strong> - Очки</p>
         </div>
+        <div class="legend" id="legend-last-game" style="display: none;">
+            <strong>Ф</strong> - Форма, <strong>О</strong> - Очки</p>
+        </div>
     </div>
+
+    <section class="container last-game" id="last5Table" style="display: none;">
+        <h1>Форма за последние 5 игр</h1>
+        
+    </section>
 
     <section class="afisha-section">
         <div class="afisha-content">
@@ -154,5 +331,7 @@
         </div>
     </section>
 
+
+    <script src="script/script.js"></script>
 </body>
 </html>
