@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #c1bfe4;
+    background-color: #bfc8e4;
     color: #333;
     /* display: flex; */
     /* justify-content: center; */
@@ -24,7 +24,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #2c3e50; /* Темно-синий */
+    color: #1b6ec1; /* Темно-синий */
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 2em; /* Немного уменьшил, если много колонок */
@@ -46,7 +46,7 @@ table {
 
 /* Стили заголовков таблицы */
 thead th {
-    background-color: #3498db; /* Приятный синий цвет */
+    background-color: #3683ac; /* Приятный синий цвет */
     color: #ffffff;
     padding: 12px 15px; /* Немного уменьшил паддинги */
     text-align: center; /* Центрируем заголовки */
